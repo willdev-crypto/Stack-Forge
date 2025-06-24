@@ -1,0 +1,129 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BIBLIOTECA </title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+
+   
+
+</head>
+
+
+<body>
+
+    <header>
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./musicas.html">Músicas</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('open');
+        });
+
+      
+        document.querySelectorAll('nav a').forEach(function (item) {
+            item.addEventListener('click', function () {
+                document.querySelector('nav').classList.remove('open');
+            });
+        });
+    </script>
+
+
+
+
+
+
+   
+
+    <div class="playlist-container">
+        <a href="https://open.spotify.com/playlist/2v4m4gj9uPe9mmvzeLnH39?si=ba8504273558416c" class="page-title">EXCLUSIVE MY BEATS & SONGS</a>
+        <a href="https://youtube.com/playlist?list=PLBPlc41Y4LqOW98nkv7iO8pcPaeUZMzgb&si=tzNFuM6RExovCYz_" class="h1">
+            <h1>MY CHILLHOP BEATS</h1>
+        </a>
+    </div>
+    
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/YTdxdr9pNnw?si=QWp_Cpf-NmeO--zT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+    </ul>
+    </div>
+
+    <script>
+        async function fetchSongs() {
+            const musicFolderPath = './public/assets/music/INSTRUMENTALS';
+            const songs = [
+
+               
+            ];
+
+            return songs.map(file => {
+                return {
+                    title: file.replace(/\.[^/.]+$/, ''),
+                    artist: 'Desconhecido',
+                    album: 'LIVE',
+                    src: `${musicFolderPath}/${file}`,
+                };
+            });
+        }
+
+        async function loadSongs() {
+            const songs = await fetchSongs();
+            const playlistContainer = document.getElementById('playlist');
+            const audioPlayer = document.getElementById('audio-player');
+
+            songs.forEach((song, index) => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<b>${song.title}</b> - ${song.artist} (${song.album})`;
+                listItem.addEventListener('click', () => playSong(song.src, audioPlayer));
+                playlistContainer.appendChild(listItem);
+            });
+        }
+
+        function playSong(src, audioPlayer) {
+            audioPlayer.src = src;
+            audioPlayer.play();
+        }
+
+        loadSongs();
+    </script>
+    <footer class="">
+        <p></p>
+
+        <audio controls loop class="custom-audio">
+           
+            <source src="./assets/music/What Say You.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <ul class="redes-sociais">
+            <li><a href="https://open.spotify.com/user/wil.dgl?si=BxCu9-9WSVOPEguT-DdypQ">SPOTIFY</a></li>
+            <li><a href="https://instagram.com/wb_recordings?igshid=MzMyNGUyNmU2YQ==">INSTAGRAM</a></li>
+            <li><a href="https://m.soundcloud.com/wbrecordsmusic">SOUNDCLOUD</a></li>
+        </ul>
+
+
+
+
+        <p>W & B RECORDINGS &copy; </p>
+        <a href="./index.html">PÁGINA INICIAL</a>
+    </footer>
+
+</body>
+
+</html>

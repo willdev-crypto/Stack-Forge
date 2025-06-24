@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Poema</title>
+    <style>
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #af45452c;
+            margin: 0;
+            background-image: url('./imagens/fundopoemas.webp');
+            background-size: cover;
+        }
+
+        /* Additional styles for better mobile experience */
+        @media (max-width: 576px) {
+            body {
+                background-size: auto; /* Adjust background size for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagens/poema1.webp" class="d-block w-100" alt="Poema 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/poema2.webp" class="d-block w-100" alt="Poema 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/poema3.jpg" class="d-block w-100" alt="Poema 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/contos.jpg" class="d-block w-100" alt="Poema 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <div class="container text-center mt-3">
+        <button type="button" class="btn btn-outline-info" onclick="window.location.href='index.html'">PÁGINA INICIAL</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

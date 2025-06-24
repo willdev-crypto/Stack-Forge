@@ -1,0 +1,457 @@
+body {
+    background-image: url(./assets/img/logo\ \(2\).gif);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 15vw;
+    transition: background-size 0.5s ease;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+
+body {
+    margin: 0;
+    /* Remover a margem padrão do body para garantir um layout consistente */
+    padding: 0;
+    /* Remover o preenchimento padrão do body */
+    min-height: 100vh;
+    /* Garantir que o body ocupe pelo menos a altura total da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    /* Ajusta a margem superior para empurrar o footer para o final da página */
+
+    color: #fff;
+    /* Cor de texto opcional para o footer */
+    padding: 10px;
+    /* Espaçamento interno para o footer */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer p {
+    font-size: 30px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    /* Adiciona negrito ao texto */
+}
+
+ul.redes-sociais {
+    list-style: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+}
+
+ul.redes-sociais li {
+    display: inline-block;
+    /* Exibe os itens da lista em linha */
+    margin-right: 10px;
+    /* Adiciona espaçamento entre os itens */
+}
+
+ul.redes-sociais li a {
+    text-decoration: none;
+    color: #e7dcdc;
+    /* Cor dos links */
+    font-weight: bold;
+    /* Adiciona negrito aos links */
+    
+}
+
+ul.redes-sociais li a:hover {
+    color: #ff6600; /* Altere para a cor desejada ao passar o mouse */
+    /* Adicione mais estilos conforme necessário */
+}
+/* Adicione o resto do seu estilo abaixo desta linha */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Opacidade inicial */
+    }
+
+    to {
+        opacity: 1;
+        /* Opacidade final */
+    }
+}
+
+
+
+/* Adicione estas regras ao seu arquivo style.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+    z-index: 999;
+    
+   
+}
+
+
+
+nav {
+    background-color: rgba(199, 177, 177, 0.8);
+    /* Cor com 80% de opacidade */
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav.open {
+    width: 220px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Estilo padrão para o áudio */
+audio {
+    width: 100%;
+    max-width: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Ajuste para dispositivos móveis e telas menores */
+@media only screen and (max-width: 400px) {
+    audio {
+        max-width: 100%;
+        /* Ajusta a largura máxima para preencher a largura da tela */
+    }
+}
+
+.video-iframe {
+    position: relative;
+    top: 80px; /* ajuste conforme necessário */
+    left: 80px; /* ajuste conforme necessário */
+    
+}
+
+.page-title {
+    position: absolute;
+    top: 450px; /* ajuste conforme necessário */
+    left: 100px; /* ajuste conforme necessário */
+    font-family: 'Vina Sans', sans-serif;
+    color: #7cadf8; 
+    font-size: 50px;
+    
+}
+
+
+a {
+    color: #e7ebf5; /* Cor do texto do link */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixar o texto em negrito, se desejar */
+    /* Adicione mais estilos conforme necessário */
+}
+
+/* Estilo para o link quando hover (quando o mouse está sobre ele) */
+a:hover {
+    color: #ff6600; /* Altere para a cor desejada ao passar o mouse */
+    /* Adicione mais estilos conforme necessário */
+}
+
+.player-iframe {
+    position: fixed;
+    top: 80px; /* ajuste conforme necessário */
+    right: 0; /* Ajusta o elemento à direita da tela */
+    width: 560px; /* Ajuste conforme necessário */
+    height: 315px; /* Ajuste conforme necessário */
+}
+ 
+
+
+h1 {
+    position: absolute;
+    top: 420px; /* Ajuste conforme necessário para posicionar verticalmente */
+    right: 70px; /* Ajuste conforme necessário para posicionar horizontalmente */
+    font-family: 'Vina Sans', sans-serif;
+    color: #7cadf8; 
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+ h1:hover {
+    color: #ff6600; 
+    
+}.container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: flex-start; /* Alinhar as imagens no início do contêiner */
+}
+
+.thumbnail-container {
+    display: flex;
+    margin-right: 15px;
+}
+
+.thumbnail-container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 5px;
+}
+
+.container img {
+    max-width: 10%;
+    height: auto;
+    animation: scroll 5s linear infinite;
+    animation-direction: alternate;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave à propriedade transform */
+}
+
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: flex-start;
+    width: 100%; /* Ajuste a largura conforme necessário */
+}
+
+.container img {
+    max-width: 10%;
+    height: auto;
+    margin-right: 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    /* Adicione estilos específicos para dispositivos com largura menor que 600px aqui */
+    body {
+        
+    }
+
+    .container img {
+        /* Exemplo: ajuste o tamanho das imagens ou remova a animação de rolagem */
+        animation: none;
+    }
+}
+nav {
+    position: fixed; /* Manter o menu fixo na tela */
+    z-index: 2; /* Definir um valor maior para z-index */
+}
+
+.container {
+    position: relative; /* Adicionar posição relativa ao contêiner principal */
+    z-index: 1; /* Definir um valor menor para z-index */
+}
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    z-index: 3; /* Definir um valor ainda maior para z-index */
+}
+.video-iframe
+     {
+        float: left;
+        margin-right: 800px; /* Ajuste conforme necessário para adicionar espaço à direita do iframe */
+    }
+
+    #exploracao {
+        background-color: rgba(250, 5, 5, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        #exploracao p {
+            font-size: 60px;
+            color: #f3e8e8;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: rainbow 3s infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: #f3e8e8; }
+            25% { color: #ffcc00; }
+            50% { color: #ff6666; }
+            75% { color: #6699ff; }
+            100% { color: #3213bb; }
+        }
+
+    
+
+
+        .custom-audio {
+            width: 80%;
+            max-width: 400px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto; /* Adiciona margem para centralizar o elemento */
+        }
+        
+        /* Ajuste para dispositivos móveis e telas menores */
+        @media only screen and (max-width: 600px) {
+            .custom-audio {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* ... (restante do seu estilo) ... */
+        
+        /* Ajuste para dispositivos móveis e telas menores */
+        @media only screen and (max-width: 600px) {
+            .video-iframe,
+            .player-iframe {
+                width: 100%; /* Define uma largura máxima para telas menores */
+                margin: 10px 0; /* Adiciona margem superior e inferior */
+            }
+        
+            .page-title,
+            .h2 {
+                margin: 1rem 0; /* Adiciona espaçamento superior e inferior */
+                font-size: 1.5rem; /* Reduz o tamanho da fonte para telas menores */
+                text-align: center; /* Centraliza o texto */
+            }
+        }
+        
+        /* Estilos para o contêiner dos links */
+.playlist-container {
+    display: flex; /* Usa flexbox para colocar os elementos ao lado um do outro */
+    justify-content: space-around; /* Distribui o espaço igualmente entre os elementos */
+    flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha se não houver espaço suficiente */
+}
+
+/* Estilos para os links das playlists */
+.page-title,
+.h1 {
+    display: block; /* Faz com que os links ocupem toda a largura disponível */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 10px; /* Adiciona margem para espaçamento e ajusta para dispositivos maiores */
+    font-size: 24px; /* Ajusta o tamanho da fonte conforme necessário */
+    color: #007bff; /* Adicione a cor desejada para os links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    
+}
+
+/* Estilos para o título h1 dentro do link h2 */
+.h1 {
+    font-size: 36px; /* Ajusta o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Adiciona negrito ao texto */
+}
+
+/* Ajuste para dispositivos móveis e telas menores */
+@media only screen and (max-width: 600px) {
+    .page-title,
+    .h1 {
+        margin: 20px 0; /* Adiciona espaço superior e inferior e remove a margem lateral para dispositivos menores */
+    }
+}

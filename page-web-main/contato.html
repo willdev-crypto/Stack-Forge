@@ -1,0 +1,84 @@
+<!-- contato.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W & B RECORDINGS WEB - Contato</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    
+
+
+</head>
+
+<body>
+    <header>
+
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./musicas.html">Músicas</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('open');
+        });
+
+        // Adicione este trecho para fechar o menu ao clicar em um item
+        document.querySelectorAll('nav a').forEach(function (item) {
+            item.addEventListener('click', function () {
+                document.querySelector('nav').classList.remove('open');
+            });
+        });
+    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Seu cabeçalho HTML -->
+</head>
+<body>
+    <!-- Seu conteúdo HTML existente -->
+
+    <div id="exploracao">
+        <p>EXPLORE CONOSCO NO INSTAGRAM, MERGULHE NAS NOSSAS PLAYLISTS, ENVIE INDICAÇÕES, COMPARTILHE DÚVIDAS E EMBARQUE NESSA JORNADA SONORA ONDE A MÚSICA É MAIS QUE NOTAS, É A ESSÊNCIA .  🎶✨🎶✨</p>
+        
+    </div>
+
+    <!-- Seu rodapé HTML -->
+</body>
+</html>
+
+    <main>
+        <!-- Conteúdo da página de contato aqui -->
+    </main>
+
+    <footer class="">
+        <p></p>
+
+        <audio controls loop class="custom-audio">
+           
+            <source src="./assets/music/What Say You.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <ul class="redes-sociais">
+            <li><a href="https://open.spotify.com/user/wil.dgl?si=BxCu9-9WSVOPEguT-DdypQ">SPOTIFY</a></li>
+            <li><a href="https://instagram.com/wb_recordings?igshid=MzMyNGUyNmU2YQ==">INSTAGRAM</a></li>
+            <li><a href="https://m.soundcloud.com/wbrecordsmusic">SOUNDCLOUD</a></li>
+        </ul>
+
+
+
+
+        <p>W & B RECORDINGS &copy; </p>
+        <a href="./index.html">PÁGINA INICIAL</a>
+    </footer>
+
+</body>
+
+</html>

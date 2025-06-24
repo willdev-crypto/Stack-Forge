@@ -1,0 +1,26 @@
+[
+{
+    "nome":"William",
+    "idade": 30,
+    "esta trabahando": true,
+    "detalhes_profissao": {
+        "profissao": "Programador",
+        "empresa x":   
+    },
+    "hobbies": ["Programar,Ler,Musica"]
+    
+},
+
+{
+    "nome":"joao",
+    "idade": 29,
+    "esta trabahando": false,
+  {  "detalhes_profissao": null, 
+        "profissao": "null",
+        "empresa": null
+    },
+    "hobbies" ["FUtebol,videogame"],
+}    
+]
+
+console.log(objs)

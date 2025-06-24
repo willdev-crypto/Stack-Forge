@@ -1,0 +1,19 @@
+ n = int(input('digite um numero para ver sua tabuada'))
+print('{} x {} = {}'.format(n, 1, n*1))
+print('{} x {} = {}'.format(n, 2, n*2))
+print('{} x {} = {}'.format(n, 3, n*3))
+print('{} x {} = {}'.format(n, 4, n*4))
+print('{} x {} = {}'.format(n, 5, n*5))
+print('{} x {} = {}'.format(n, 6, n*6))
+print('{} x {} = {}'.format(n, 7, n*7))
+print('{} x {} = {}'.format(n, 8, n*8))
+print('{} x {} = {}'.format(n, 9, n*9)
+
+medida = float(input('uma distancia em metros :'))
+cm = medida * 100
+mm = medida * 1000
+print('A medida de {}m coresponde a {:.0f}cm e{:.0f}mm .' .format(medida, cm, mm))
+
+salario = float(input('qual é o salario do funcionario?'))
+    novo = salario + (salario * 15/100)
+    print ('um funcionario que ganhava {:.2f} , com o aumento de 15% passa a ganhar {:.2f}'.format(salario,novo))
